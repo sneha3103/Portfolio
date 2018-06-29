@@ -14,142 +14,10 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
-  <style type="text/css">
-    /* Necessary for full page carousel*/
-    html,
-    body,
-    header,
-    .view {
-      height: 100%;
-    }
+  <link href="css/style.css" rel="stylesheet">
 
-    /* Carousel*/
-    .carousel,
-    .carousel-item,
-    .carousel-item.active {
-      height: 100%;
-    }
-    .carousel-inner {
-      height: 100%;
-    }
-
-    #aboutme {
-      position: relative;
-      top: 75px;
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-      .navbar:not(.top-nav-collapse) {
-          background: #1C2331!important;
-      }
-  }
-
-
-  body {
-  line-height: 1.5;
-  background: #e5edef;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.content {
-  padding: 4em 3em 2em;
-  max-width: 1024px;
-  margin: 0 auto;
-  background: #cedcdf;
-}
-
-img {
-  max-width: 100%;
-}
-
-h2 {
-  font-family: 'Mr Dafoe', cursive;
-  font-size: 2em;
-  text-align: center;
-  margin: .2em 0 0;
-}
-
-.step {
-  width: 100%;
-  float: left;
-  padding: 0 4%;
-}
-
-@media (min-width: 800px) {
-  .step {
-    width: 33.333%;
-  }
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
   
-
-.step--1 .pola {
-  transform: rotate(2deg);
-}
-
-.step--2 .pola {
-  transform: rotate(1deg);
-}
-
-.step--3 .pola {
-  transform: rotate(-3deg);
-}
-}
-
-.step--2 {
-  padding-top: 2em;
-}
-.step--3 {
-  padding-top: 2em;
-}
-
-.pola {
-  background: #fff;
-  padding: 1em;
-  margin-bottom: 2em;
-  position: relative;
-  max-width: 300px;
-}
-
-@media(min-width: 550px) {
-  .pola {
-    float: left;
-    margin-right: 2em;
-    width: 45%;
-  }
-  
-}
-
-@media(min-width: 800px) {
-  .pola {
-    width: 100%;
-  }
-  
-}
-
-.pola:before {
-  position: absolute;
-  content: '';
-  width: 3%;
-  height: 10%;
-  background: #e7aa48;
-  top: -6%;
-  left: 47%;
-}
-
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
-
-
-  </style>
 </head>
 
 <body>
@@ -237,7 +105,7 @@ h2 {
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
 
-              <h1 class="mb-4"> 
+              <h1 class="mb-4" id="Sneha"> 
             
                   <strong>SNEHA DAMA: </strong>
                       <a href="" class="typewrite" data-period="2000" data-type='[ "The Developer.", "The Dancer.", "The Traveler." ]'>
@@ -341,20 +209,12 @@ h2 {
           <div class="col-md-6 mb-4" id ="aboutme">
 
             <!-- Main heading -->
-            <h3 class="h3 mb-3">In a nutshell...</h3>
+            <h3 class="h3 mb-3" id="nutshell">In a nutshell...</h3>
             <p>An entreupreunerial mindset featuring a Supply Chain Management degree with a passion to develop, dance, and travel.</p>
            
             <!-- Main heading -->
 
             <hr>
-
-            <!-- <p>
-              <strong>400+</strong> material UI elements,
-              <strong>600+</strong> material icons,
-              <strong>74</strong> CSS animations, SASS files, templates, tutorials and many more.
-              <strong>Free for personal and commercial use.</strong>
-            </p> -->
-
 
           </div>
           <!--Grid column-->
@@ -370,7 +230,7 @@ h2 {
       <!--Section: Main features & Quick Start-->
       <section>
 
-        <h3 class="h3 text-center mb-5">Meet the Developer</h3>
+        <h3 class="h3 text-center mb-5" id= "roleTitle">Meet the Developer</h3>
 
          
 
@@ -516,7 +376,7 @@ h2 {
       <!--Section: Not enough-->
       <section>
 
-        <h2 class="my-5 h3 text-center">Meet the Dancer</h2>
+        <h2 class="my-5 h3 text-center" id="roleTitle">Meet the Dancer</h2>
 
         
 
@@ -562,7 +422,7 @@ h2 {
       <!--Section: More-->
       <section>
 
-        <h2 class="my-5 h3 text-center">Meet the Traveler</h2>
+        <h2 class="my-5 h3 text-center" id="roleTitle">Meet the Traveler</h2>
 
         <!--First row-->
         <div class="row features-small mt-5 wow fadeIn">
