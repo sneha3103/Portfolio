@@ -44,6 +44,111 @@
       }
   }
 
+
+  body {
+  line-height: 1.5;
+  background: #e5edef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  padding: 4em 3em 2em;
+  max-width: 1024px;
+  margin: 0 auto;
+  background: #cedcdf;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 2em;
+  text-align: center;
+  margin: .2em 0 0;
+}
+
+.step {
+  width: 100%;
+  float: left;
+  padding: 0 4%;
+}
+
+@media (min-width: 800px) {
+  .step {
+    width: 33.333%;
+  }
+  
+
+.step--1 .pola {
+  transform: rotate(2deg);
+}
+
+.step--2 .pola {
+  transform: rotate(1deg);
+}
+
+.step--3 .pola {
+  transform: rotate(-3deg);
+}
+}
+
+.step--2 {
+  padding-top: 2em;
+}
+.step--3 {
+  padding-top: 2em;
+}
+
+.pola {
+  background: #fff;
+  padding: 1em;
+  margin-bottom: 2em;
+  position: relative;
+  max-width: 300px;
+}
+
+@media(min-width: 550px) {
+  .pola {
+    float: left;
+    margin-right: 2em;
+    width: 45%;
+  }
+  
+}
+
+@media(min-width: 800px) {
+  .pola {
+    width: 100%;
+  }
+  
+}
+
+.pola:before {
+  position: absolute;
+  content: '';
+  width: 3%;
+  height: 10%;
+  background: #e7aa48;
+  top: -6%;
+  left: 47%;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
   </style>
 </head>
 
@@ -413,137 +518,43 @@
 
         <h2 class="my-5 h3 text-center">Meet the Dancer</h2>
 
+        
+
         <!--First row-->
         <div class="row features-small mb-5 mt-3 wow fadeIn">
+           
+            <section>
+                <div class="content cf">
+                  <div class="step step--1">
+                    <div class="pola">
+                      <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350" alt="" />
+              
+                      <h2>1. Step1</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error perspiciatis in tenetur iure, quae dolorum, voluptates quia cupiditate modi explicabo voluptatibus atque quibusdam qui non facilis ratione unde ducimus asperiores!</p>
+                  </div>
+                  
+                  <div class="step step--2">
+                    <div class="pola">
+                      <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350" alt="" />
+              
+                      <h2>2. Step2</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, error!</p>
+                  </div>
+                  
+                  <div class="step step--3">
+                    <div class="pola">
+                      <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350" alt="" />
+              
+                      <h2>3. Step3</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nesciunt dolores, omnis nihil dicta ipsa.</p>
+                  </div>
+                </div>
+              </section>
 
-          <!--First column-->
-          <div class="col-md-4">
-            <!--First row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Free for personal and commercial use</h6>
-                <p class="grey-text">Our license is user-friendly. Feel free to use MDB for both private as well as commercial projects.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/First row-->
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">400+ UI elements</h6>
-                <p class="grey-text">An impressive collection of flexible components allows you to develop any project.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">600+ icons</h6>
-                <p class="grey-text">Hundreds of useful, scalable, vector icons at your disposal.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Third row-->
-
-            <!--Fourth row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Fully responsive</h6>
-                <p class="grey-text">It doesn't matter whether your project will be displayed on desktop, laptop, tablet or mobile phone. MDB
-                  looks great on each screen.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Fourth row-->
-          </div>
-          <!--/First column-->
-
-          <!--Second column-->
-          <div class="col-md-4 flex-center">
-            <img src="https://mdbootstrap.com/img/Others/screens.png" alt="MDB Magazine Template displayed on iPhone" class="z-depth-0 img-fluid">
-          </div>
-          <!--/Second column-->
-
-          <!--Third column-->
-          <div class="col-md-4 mt-2">
-            <!--First row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">70+ CSS animations</h6>
-                <p class="grey-text">Neat and easy to use animations, which will increase the interactivity of your project and delight your visitors.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/First row-->
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Plenty of useful templates</h6>
-                <p class="grey-text">Need inspiration? Use one of our predefined templates for free.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Easy installation</h6>
-                <p class="grey-text">5 minutes, a few clicks and... done. You will be surprised at how easy it is.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Third row-->
-
-            <!--Fourth row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Easy to use and customize</h6>
-                <p class="grey-text">Using MDB is straightforward and pleasant. Components flexibility allows you deep customization. You will
-                  easily adjust each component to suit your needs.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Fourth row-->
-          </div>
-          <!--/Third column-->
-
-        </div>
-        <!--/First row-->
-
-      </section>
+          
       <!--Section: Not enough-->
 
       <hr class="mb-5">
