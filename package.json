@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/sneha3103/Portfolio/issues"
   },
-  "homepage": "https://github.com/sneha3103/Portfolio#readme"
+  "homepage": "https://github.com/sneha3103/Portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
 }
