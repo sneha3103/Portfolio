@@ -55,6 +55,7 @@
   color: rgb(10, 1, 1);
   }
 
+
   #nutshell {
     font-family: 'Dancing Script', cursive;
   }
@@ -63,6 +64,20 @@
     font-family: 'Dancing Script', cursive;
   }
 
+  #astrafund {
+    position: relative;
+    padding-bottom: 33px;
+  }
+
+  #aladdinCard {
+    position: relative;
+    padding-bottom: 23px;
+  }
+
+  #astrafundButtonApp {
+    position: relative;
+    top: 14px;
+  }
   @media (min-width: 800px) and (max-width: 850px) {
     .navbar:not(.top-nav-collapse) {
         background: #1C2331!important;
